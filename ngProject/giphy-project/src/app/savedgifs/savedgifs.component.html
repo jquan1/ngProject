@@ -1,0 +1,14 @@
+<h3>
+  Your saved Giphy
+</h3>
+
+<button type="button" (click)="goBack()">
+  Back to Search
+</button>
+
+
+<div class="row">
+  <div class="grid-item " *ngFor="let gif of gifs">
+    <img src={{gif.imageUrl}} alt="Not Found">
+  </div>
+</div>

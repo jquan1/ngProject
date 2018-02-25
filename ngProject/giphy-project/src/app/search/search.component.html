@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-12">
+    <form class="form-inline" #giphyForm="ngForm"
+          (ngSubmit)="searchGiphy()">
+      <div class="form-group">
+        <label for="keyword" class="control-label">Keyword</label>
+        <input type="text" id="keyword" name="keyword" class="form-control"
+          placeholder="gif keyword" ngModel required>
+      </div>
+      <button type="submit" class="btn btn-success">GET!</button>
+    </form>
+  </div>
+</div>

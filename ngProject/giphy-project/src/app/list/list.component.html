@@ -1,0 +1,11 @@
+<div>
+<button type="button" (click)="viewSavedGifs()">
+  View your saved gifs
+</button>
+</div>
+  <div class="row">
+    <div class="grid-item " *ngFor="let gif of gifs">
+      <img src={{gif.imageUrl}} alt="Not Found">
+      <button type="submit" (click)="saveGiphy(gif)">save</button>
+    </div>
+  </div>
